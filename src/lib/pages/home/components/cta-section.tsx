@@ -1,7 +1,7 @@
 import { Box, Button, Flex, Image, Link } from '@chakra-ui/react';
 import { AiFillGithub } from 'react-icons/ai';
 
-const repoLink = 'https://github.com/agustinusnathaniel/nextarter-chakra';
+const repoLink = 'https://github.com/tryMatana/cms';
 
 export const CTASection = () => {
   return (
@@ -12,7 +12,7 @@ export const CTASection = () => {
             aria-label="Deploy to Vercel"
             target="_blank"
             rel="noopener noreferrer"
-            href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fagustinusnathaniel%2Fnextarter-chakra"
+            href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FtryMatana%2Fcms"
           >
             <Image
               src="https://vercel.com/button"
@@ -26,7 +26,7 @@ export const CTASection = () => {
             aria-label="Deploy to Netlify"
             target="_blank"
             rel="noopener noreferrer"
-            href="https://app.netlify.com/start/deploy?repository=https://github.com/agustinusnathaniel/nextarter-chakra"
+            href="https://app.netlify.com/start/deploy?repository=https://github.com/tryMatana/cms"
           >
             <Image
               src="https://www.netlify.com/img/deploy/button.svg"
@@ -40,10 +40,7 @@ export const CTASection = () => {
 
       <Flex justifyContent="center" alignItems="center" gap={2}>
         <Button asChild size="sm">
-          <a
-            href="https://github.com/agustinusnathaniel/nextarter-chakra/generate"
-            target="_blank"
-          >
+          <a href="https://github.com/tryMatana/cms/generate" target="_blank">
             Use This Template
           </a>
         </Button>

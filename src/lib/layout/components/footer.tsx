@@ -6,11 +6,11 @@ export const Footer = () => {
       <Text fontSize="sm">
         {new Date().getFullYear()} -{' '}
         <Link
-          href="https://agustinusnathaniel.com"
+          href="https://matanauniversity.ac.id"
           target="_blank"
           rel="noopener noreferrer"
         >
-          agustinusnathaniel.com
+          Matana University
         </Link>
       </Text>
     </Flex>
