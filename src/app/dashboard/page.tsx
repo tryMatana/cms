@@ -20,12 +20,4 @@ export default function DashboardPage() {
       )}
     </>
   );
-
-  return (
-    // <SidebarDropdown/>
-    <DashboardLayout>
-      <h1>Selamat datang di Dashboard</h1>
-      <p>Ini konten halaman utama dashboard.</p>
-    </DashboardLayout>
-  );
 }

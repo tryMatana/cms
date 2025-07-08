@@ -51,9 +51,12 @@ export default function MenuBar() {
             </MenuButton>
             <MenuList>
               {menu.children.map((child) => (
-                <Link key={child.label} href={child.href} passHref>
-                  <MenuItem as="a">{child.label}</MenuItem>
-                </Link>
+                <MenuItem key={child.label} as={Link} href={child.href}>
+                  {child.label}
+                </MenuItem>
+                // <Link key={child.label} href={child.href} passHref>
+                //   <MenuItem as="a">{child.label}</MenuItem>
+                // </Link>
               ))}
             </MenuList>
           </Menu>

@@ -7,11 +7,18 @@ import {
   Text,
   Spacer,
 } from '@chakra-ui/react';
-import { Menu, MenuList, MenuItem } from '@chakra-ui/menu';
+import { Menu, MenuList, MenuItem, MenuButton } from '@chakra-ui/menu';
 
 import { Bell, Home, Grid3X3, LogOut } from 'lucide-react';
+import { useRouter } from 'next/navigation';
 
 export default function AppHeader() {
+  const router = useRouter();
+
+  const handleLogout = () => {
+    router.push('/login');
+  };
+
   return (
     <Flex
       as="header"
@@ -42,13 +49,18 @@ export default function AppHeader() {
         </IconButton>
 
         <Menu>
-          <Avatar.Root>
-            <Avatar.Fallback name="Segun Adebayo" />
-            <Avatar.Image src="https://bit.ly/sage-adebayo" />
-          </Avatar.Root>
+          <MenuButton as={IconButton} variant="ghost" borderRadius="full" p={0}>
+            <Avatar.Root>
+              <Avatar.Fallback name="Segun Adebayo" />
+              <Avatar.Image src="https://bit.ly/sage-adebayo" />
+            </Avatar.Root>
+          </MenuButton>
           <MenuList>
-            <MenuItem>
-              <LogOut size={16} />
+            <MenuItem
+              icon={<LogOut size={16} />}
+              onClick={handleLogout}
+              style={{ cursor: 'pointer' }}
+            >
               Logout
             </MenuItem>
           </MenuList>

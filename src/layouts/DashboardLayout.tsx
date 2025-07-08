@@ -75,7 +75,7 @@ function Header({ onToggleSidebar }: { onToggleSidebar: () => void }) {
   const router = useRouter();
 
   const handleLogout = () => {
-    localStorage.removeItem('token');
+    // localStorage.removeItem('token');
     router.push('/login');
   };
 

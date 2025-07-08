@@ -1,5 +1,7 @@
+// src/app/layout.tsx
 import type { Metadata, Viewport } from 'next';
 import { Provider } from '@/components/ui/provider';
+import React from 'react';
 
 type RootLayoutProps = {
   children: React.ReactNode;

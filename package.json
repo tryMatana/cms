@@ -2,6 +2,7 @@
   "name": "siakad-cms",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "author": "teamdevmatana",
   "engines": {
     "node": ">=22.16.x"
@@ -17,7 +18,7 @@
     "build:turbo": "pnpm turbo run build",
     "postbuild": "next-sitemap --config next-sitemap.config.js",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "eslint src --ext .ts,.tsx,.js",
     "lint:fix": "eslint src --fix && pnpm format",
     "type-check": "tsc --noEmit",
     "check:turbo": "pnpm turbo lint type-check",
@@ -30,6 +31,8 @@
     "prepare": "husky"
   },
   "dependencies": {
+    "@chakra-ui/form-control": "^2.2.0",
+    "@chakra-ui/input": "^2.1.2",
     "@chakra-ui/menu": "^2.2.1",
     "@chakra-ui/react": "^3.22.0",
     "@emotion/react": "^11.14.0",
@@ -58,6 +61,8 @@
     "@eslint/js": "^9.30.1",
     "@playwright/test": "^1.53.2",
     "@types/react": "^19.1.8",
+    "@typescript-eslint/eslint-plugin": "^8.36.0",
+    "@typescript-eslint/parser": "^8.36.0",
     "commitizen": "^4.3.1",
     "cross-env": "^7.0.3",
     "eslint": "^9.30.1",
