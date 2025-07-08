@@ -1,8 +1,8 @@
 {
-  "name": "nextarter-chakra",
+  "name": "siakad-cms",
   "version": "0.1.0",
   "private": true,
-  "author": "agustinusnathaniel",
+  "author": "teamdevmatana",
   "engines": {
     "node": ">=22.16.x"
   },
@@ -30,15 +30,24 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@chakra-ui/react": "^3.21.1",
+    "@chakra-ui/menu": "^2.2.1",
+    "@chakra-ui/react": "^3.22.0",
     "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@hookform/resolvers": "^5.1.1",
+    "axios": "^1.10.0",
     "commit-and-tag-version": "^12.5.1",
+    "framer-motion": "^12.23.0",
     "knip": "^5.61.3",
+    "lucide-react": "^0.525.0",
     "next": "^15.3.5",
     "next-themes": "^0.4.6",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "react-icons": "^5.5.0"
+    "react-hook-form": "^7.60.0",
+    "react-icons": "^5.5.0",
+    "zod": "^3.25.75",
+    "zustand": "^5.0.6"
   },
   "devDependencies": {
     "@chakra-ui/cli": "^3.21.1",

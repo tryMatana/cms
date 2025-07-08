@@ -1,7 +1,5 @@
 import type { Metadata, Viewport } from 'next';
-
 import { Provider } from '@/components/ui/provider';
-import { Layout } from '@/lib/layout';
 
 type RootLayoutProps = {
   children: React.ReactNode;
@@ -46,9 +44,7 @@ const RootLayout = ({ children }: RootLayoutProps) => {
   return (
     <html lang="en" suppressHydrationWarning>
       <body>
-        <Provider>
-          <Layout>{children}</Layout>
-        </Provider>
+        <Provider>{children}</Provider>
       </body>
     </html>
   );
