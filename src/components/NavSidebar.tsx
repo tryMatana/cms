@@ -21,9 +21,9 @@ import {
   User,
   Users,
 } from 'lucide-react';
-import { ReactNode } from 'react';
+import React, { ReactNode } from 'react';
 
-type ListItem = {
+type ListItemType = {
   text?: string;
   icon: React.ElementType;
 };
@@ -32,7 +32,7 @@ interface NavSidebarProps {
   children?: ReactNode;
 }
 
-const listItems: ListItem[] = [
+const listItems: ListItemType[] = [
   { text: 'Home', icon: House },
   { text: 'Settings', icon: Settings },
   { text: 'Users', icon: Users },
@@ -120,7 +120,7 @@ export default function NavSidebar({ children }: NavSidebarProps) {
   );
 }
 
-const ListElement = ({ icon, text }: ListItem) => {
+const ListElement = ({ icon, text }: ListItemType) => {
   return (
     <ListItem
       as={HStack}

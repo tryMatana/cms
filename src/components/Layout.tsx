@@ -2,6 +2,7 @@
 import { Box } from '@chakra-ui/react';
 import AppHeader from './AppHeader';
 import MenuBar from './MenuBar';
+import React from 'react';
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
